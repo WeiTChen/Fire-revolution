@@ -22,6 +22,6 @@ c) If you violate the relevant laws, regulations or relevant rules of China, you
 
 ## 5. Information Security 
 
-    When using the Software Network Service for online transactions, you will inevitably disclose your personal information, such as contact information or postal address, to the counterparty or potential counterparty. Please protect your personal information and provide it to others only when necessary. If you find that your personal information is leaking, please contact the software customer service immediately, so that the software can take corresponding measures.
+ When using the Software Network Service for online transactions, you will inevitably disclose your personal information, such as contact information or postal address, to the counterparty or potential counterparty. Please protect your personal information and provide it to others only when necessary. If you find that your personal information is leaking, please contact the software customer service immediately, so that the software can take corresponding measures.
 
 Author: William
