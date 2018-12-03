@@ -20,6 +20,8 @@ c) If you violate the relevant laws, regulations or relevant rules of China, you
 
 ## 4. Information Storage and Exchange The information and materials collected by the Software relating to you will be stored on the Software and/or its affiliates' servers, which may be transmitted to your country, region or the Software to collect information and materials. It is located outside the country and is accessed, stored and displayed outside the country. 
 
-## 5. Information Security a) When using the Software Network Service for online transactions, you will inevitably disclose your personal information, such as contact information or postal address, to the counterparty or potential counterparty. Please protect your personal information and provide it to others only when necessary. If you find that your personal information is leaking, please contact the software customer service immediately, so that the software can take corresponding measures.
+## 5. Information Security 
+
+#### a) When using the Software Network Service for online transactions, you will inevitably disclose your personal information, such as contact information or postal address, to the counterparty or potential counterparty. Please protect your personal information and provide it to others only when necessary. If you find that your personal information is leaking, please contact the software customer service immediately, so that the software can take corresponding measures.
 
 Author: William
