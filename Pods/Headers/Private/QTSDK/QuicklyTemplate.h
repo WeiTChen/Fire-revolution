@@ -1,0 +1,1 @@
+../../../QTSDK/QTSDK/QuicklyTemplate.h

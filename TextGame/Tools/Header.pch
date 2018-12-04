@@ -1,0 +1,77 @@
+//
+//  Header.pch
+//  recruit
+//
+//  Created by 智齿 on 16/8/8.
+//  Copyright © 2016年 智齿. All rights reserved.
+//
+
+#ifndef Header_pch
+#define Header_pch
+
+#define QiNiuURL @"http://oc1i48crp.bkt.clouddn.com/"
+
+#import <sys/utsname.h>
+
+#import "Define.h"
+
+#import <objc/runtime.h>
+
+#import "UIImage+UIImageExtras.h"
+
+#import "ZCCache.h"
+
+#import "UIView+ZCExpand.h"
+
+#import <TZImagePickerController.h>
+
+#import "ZCUser.h"
+
+#import "ZCTabBarViewController.h"
+
+#import "ZCDefaultMaskView.h"
+
+#import "UIColor+ZCHexColor.h"
+
+#import "HttpManager.h"
+
+#import "Masonry.h"
+
+#import "TCStringManage.h"
+
+#import "NSObject+TCJSON.h"
+
+#import "SMWebViewManager.h"
+
+#import "MBProgressHUD.h"
+
+#import "UIView+AddLayer.h"
+
+#import "ProgressHUDManager.h"
+
+#import "TCViewManger.h"
+
+#import "NSString+MD5.h"
+
+#import "BaseJsonModel.h"
+
+
+#import "UIImageView+TCImage.h"
+
+#import "TCImageManage.h"
+
+#import "SMBaseSelectTableViewController.h"
+
+#import "FTPopOverMenu.h"
+
+#import "ZCVCState.h"
+
+#import "UIViewController+ZCExpand.h"
+
+#import "TCActionSheetBackgroundView.h"
+
+#import "UIAlertController+TCExpand.h"
+
+#import "SMCompanyDetailViewController.h"
+
+#endif /* Header_pch */

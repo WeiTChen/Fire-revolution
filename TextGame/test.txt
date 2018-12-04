@@ -1,0 +1,97 @@
+C:1.write down the agreement
+A:"Political commissar of Zhang!"
+C:The emergency meeting is just over，The one that looked tired because of staying up late original 359 brigade fame in the production of Nanniwan fame, and now the Central Plains military deputy commander Wang Zhen intercept the political commissar Zhang Lixiong eager to get back to the troops
+A:"Guess who wrote the central telegram?"
+C:Zhang Lixiong know that this prime-tempered, combat known and resolutely known as "Wang beard" refers to the June 23 call from Yan'an
+SEL:friendly{{1-1}}&&firm{{1-2}}
+keyStart=1-1
+B:"I have just seen the telegram, and Chairman Mao sent a new instruction."
+keyEnd
+
+keyStart=1-2
+B:"Don't need guess, of course Chairman Mao！"
+keyEnd
+
+C:The beard asked again
+A:"Is that clear to the point of the telegram?"
+B:"Of course!"
+C:Zhang Lixiong's answer is very firm
+B:"Agree to immediately highlight the siege, the sooner the better, don't worry."
+B:"Do you know what our policy is first?"
+
+SEL:Survival first{{1-3}}&&Victory first{{1-4}}
+keyStart=1-3
+A:"Survival first, victory second"
+B:"Wrong! It is the first to live and win."
+keyEnd
+
+keyStart=1-4
+A:"Survival second, victory first"
+B:"Wrong! It is the first to live and win."
+keyEnd
+
+C:In October 1945, the 359th brigade of the Eight Route Army, the Henan military region and the fifth divisions of the New Fourth Army were held in the Tongbai area, and the Central Plains Bureau and the Central Plains military area were established.
+C:At the beginning of June 1946, Jiang Jieshi launched an all-out civil war, the army of about 220 thousand people will more than 6 troops in the Central Plains military siege to Xuanhua store in Hubei Dawu County as the center, less than 100 kilometers, a population of only about 400000 in the panhandle.
+C:By the middle of June, Jiang Jieshi set up 8 multi - division divisions successively and formed the first line of troops to attack the Central Plains of Jiefang District, and appointed Liu Zhi as the commander in chief. Limited before June 22nd secret surrounded, 26 day siege, July 1st launch a general offensive, "48 hours in one fell swoop surrounded by annihilation.
+C:The military situation is like a fire. In June 23rd, Mao Zedong on behalf of the CPC Central Committee from the Central Plains Bureau: to break their implementation as soon as possible. As a result, in the emergency meeting held just now, it was decided that in June 26th, the soldiers were divided from the west to the West.
+C:Li Xiannian, the commander of the Central Plains military region, broke through the north to the south through the south to the west, and Wang Shusheng, the deputy commander of the Central Plains military area, broke out of the enemy's encirclement.
+
+A:"Survival first, victory first"
+A:"Mr. Zhang, do you think the troops can stand out?""
+
+SEL:interrupt{{1-5}}&&firm{{1-6}}
+keyStart=1-5
+B:"The success of the proletariat's revolutionary cause is the inevitability of history."
+keyEnd
+
+keyStart=1-6
+B:"We must be able to highlight the Siege!"
+keyEnd
+A:That after liberation was to become "king of Xinjiang" as Wang Zhen reassured as pleased to say: "that's good, zhangzhengwei has the determination I trust, ready to go back to the army soon."
+
+C:Just out of the military command, met PI dingjun. When PI Dingjun brigade commander as political commissar, tension, in an emergency meeting that has been decided as the breakthrough of the cover of leather brigade troops, they should take more than 7000 of the blocking of the Kuomintang army of about 220 thousand troops, the difficulties as can be imagined。
+A:"old rascal!"Zhang Lixiong knew that the old comrades worry as fraught with grim possibilities, secretly. But on the surface, "let's come to a hug from Bull J Vic.""
+
+SEL:accept{{1-7}}&&reject{{1-8}}
+keyStart=1-7
+D:"Then embrace it! " Two people usually have a good relation, on one side and tension side embrace PI Dingjun Zhang, said: "you must win, otherwise, we will die on the battlefield will be in the!"
+keyEnd
+
+keyStart=1-8
+D:"You also be confronted with a formidable enemy experienced countless! The life and death of people, what are you being so hypocritical "two people usually have a good relation:" Zhang, you must win, otherwise, we will die on the battlefield will be in the!"
+keyEnd
+
+A:The chairman said, die for the interests of the people, is not what can be weightier than Mount Tai, sorry. But should we have an agreement? To live to give the sacrifice of the flower ring, open the memorial meeting!"
+D:"That's a good idea! " PI Dingjun suddenly laughed: "Zhang, we are not Words alone are no proof., put it in writing?"
+
+SEL:write down the agreement{{1-9}}&&Oral promise{{1-10}}
+keyStart=1-9
+A:"That's all right."
+
+keyEnd
+
+keyStart=1-10
+A:"I promise you, I will come back, and made this agreement!"
+D:"You don't want to mask me! This is a very dangerous campaign, and now go with me!"
+keyEnd
+C:Combat situation than the so-called buddy loyalty do not know how many sincere and really, two comrades really in each other's notebook to leave message.
+
+C:Mao Zedong said that the first living in an urgent telegram in "victory for the first" as the cover of the main breakthrough first column first brigade 7000 soldiers were given skin, is actually four words: "lose a pawn to save a castle"。
+C:The orders received by the brigades were to stick to the barrier for the transfer of the main force. For the sake of the whole organization, in order to sacrifice local personal sacrifice, sacrifice their lives for their faith, PI Dingjun know this truth
+C:Clearly even know this may be a dead end must also go to
+C:On the day of June 26, 1946, Li Xiannian suddenly from the Kuomintang Central Military Army encircled in 300 thousand separate successfully break out, this event, mark is the history of the Chinese Communist Party and the people's Liberation Army military history as the outbreak of the war of liberation.
+C:This is the breakthrough of the Central Plains military region, which shocked both China and foreign countries, and heavy casualties. Stay as cover, almost be called to sacrifice like a ton output capacity and 7000 of his officers were given skin but in the despair created a miracle.
+D:"The seven thousand of us are unable to win over tens of thousands of enemies"
+D:"Who has a good idea among you?"
+
+SEL:empty city{{2-1}}&&Forcible breakout{{2-2}}
+keyStart=2-1
+D:"Also had to learn Zhuge Kongming, sing a kongchengji."
+C:Your troops have rushed out of the encircling because of your wrong leadership
+C:Good ending
+keyEnd
+
+keyStart=2-2
+C:Your troops are all dead because of your wrong leadership
+C:Bad ending
+keyEnd
