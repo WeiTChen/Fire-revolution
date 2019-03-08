@@ -29,7 +29,7 @@
 @end
 
 @implementation ViewController
-//http://jsdx.sc.chinaz.com/files/download/sound1/201311/3757.wav
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIImageView *imgv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
@@ -91,8 +91,13 @@
                 model.textAry = modelStrAry;
                 model.selAry = hashAry;
             }else{
-                model.text = [str substringFromIndex:2];
-                model.color = [str rangeOfString:@"A:"].length>0?[UIColor greenColor]:[str rangeOfString:@"B:"].length>0?[UIColor whiteColor]:[str rangeOfString:@"C:"].length>0?[UIColor orangeColor]:[UIColor yellowColor];
+                NSString *text = [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+                if ([text rangeOfString:@"A:"].length>0 || [text rangeOfString:@"B:"].length>0 || [text rangeOfString:@"C:"].length>0) {
+                    model.text = [text substringFromIndex:2];
+                }else{
+                    model.text = text;
+                }
+                model.color = [text rangeOfString:@"A:"].length>0?[UIColor greenColor]:[text rangeOfString:@"B:"].length>0?[UIColor redColor]:[text rangeOfString:@"C:"].length>0?[UIColor yellowColor]:[UIColor orangeColor];
             }
             
             if (open) {
@@ -170,9 +175,16 @@
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"iden" forIndexPath:indexPath];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor clearColor];
-        cell.textLabel.textColor = model.color;
-        cell.textLabel.text = model.text;
         cell.textLabel.numberOfLines = 0;
+        NSMutableParagraphStyle *paraStyle01 = [[NSMutableParagraphStyle alloc] init];
+        paraStyle01.alignment = NSTextAlignmentLeft;  //对齐
+        //参数：（字体大小17号字乘以2，34f即首行空出两个字符）
+        CGFloat emptylen = 34;
+        paraStyle01.firstLineHeadIndent = emptylen;//首行缩进
+        paraStyle01.lineSpacing = 7.0f;//行间距
+        NSAttributedString *attrText = [[NSAttributedString alloc] initWithString:model.text attributes:@{NSParagraphStyleAttributeName:paraStyle01,NSForegroundColorAttributeName:model.color}];
+        
+        cell.textLabel.attributedText = attrText;
         return cell;
     }
     
