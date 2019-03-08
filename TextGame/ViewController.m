@@ -6,7 +6,7 @@
 //  Copyright © 2018年 william. All rights reserved.
 //
 
-#define WAIT_TIME 2.5
+#define WAIT_TIME 0//2.5
 
 #import "ViewController.h"
 #import "ContentModel.h"
@@ -26,6 +26,12 @@
 //key
 @property (nonatomic,strong) NSMutableDictionary *hashDic;
 
+//计数器，用来记录进行到第几章了
+@property (nonatomic,assign) NSUInteger index;
+
+//和计数器对应，用来记录标题
+@property (nonatomic,strong) NSArray *titleAry;
+
 @end
 
 @implementation ViewController
@@ -35,7 +41,8 @@
     UIImageView *imgv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg.jpg"]];
     [self.view addSubview:imgv];
     imgv.userInteractionEnabled = YES;
-    
+    self.index = 0;
+    self.titleAry = @[@"第一章 重生成狼",@"第二章 自首之谜"];
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-144) style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
     self.tableView.backgroundColor = [UIColor clearColor];
@@ -49,13 +56,14 @@
     _textAry = [NSMutableArray array];
     _addAry = [NSMutableArray array];
     _hashDic = [NSMutableDictionary dictionary];
-    [self setup];
-    [self autoAdd];
+    
+    [self inAnimationWithText:self.titleAry[self.index] finish:nil];
+    
     
 }
 
 - (void)setup{
-    NSString *str = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
+    NSString *str = [[NSString alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%lu",(unsigned long)self.index] ofType:@"txt"] encoding:NSUTF8StringEncoding error:nil];
     NSArray *dataAry = [str componentsSeparatedByString:@"\n"];
     NSMutableArray *bufferAry = [NSMutableArray array];
     NSString *hashKey = @"";
@@ -110,14 +118,78 @@
     
 }
 
+- (void)inAnimationWithText:(NSString *)text finish:(void(^)(void))finnish{
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, self.view.frame.size.height)];
+    [self.view addSubview:v];
+    v.backgroundColor = [UIColor blackColor];
+    
+    UILabel *contentLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+    contentLb.text = text;
+    [v addSubview:contentLb];
+    contentLb.textColor = [UIColor whiteColor];
+    contentLb.font = [UIFont systemFontOfSize:22];
+    contentLb.center = CGPointMake(self.view.center.x, self.view.center.y-10);
+    contentLb.textAlignment = NSTextAlignmentCenter;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:1 animations:^{
+            v.alpha = 0;
+        }completion:^(BOOL finished) {
+            [v removeFromSuperview];
+            [self setup];
+            [self autoAdd];
+            self.index++;
+            if (finnish) {
+                finnish();
+            }
+        }];
+    });
+}
+
+- (void)outAnimationWithText:(NSString *)text finish:(void(^)(void))finnish{
+    UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_W, self.view.frame.size.height)];
+    [self.view addSubview:v];
+    v.backgroundColor = [UIColor blackColor];
+    
+    UILabel *contentLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+    contentLb.text = text;
+    [v addSubview:contentLb];
+    contentLb.textColor = [UIColor whiteColor];
+    contentLb.font = [UIFont systemFontOfSize:22];
+    contentLb.center = CGPointMake(self.view.center.x, self.view.center.y-10);
+    contentLb.textAlignment = NSTextAlignmentCenter;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:1 animations:^{
+            v.alpha = 0;
+        }completion:^(BOOL finished) {
+            [v removeFromSuperview];
+            if (finnish) {
+                finnish();
+            }
+        }];
+    });
+}
+
+
 - (void)autoAdd{
     if (self.addAry.count >= self.textAry.count) {
-        //故事完结
+        //2种情况，故事还有下一章或者故事完结
+        //完结撒花
+        if (self.index == self.titleAry.count) {
+            [self outAnimationWithText:@"未完待续..." finish:nil];
+            return;
+        }
+        //章节指针向后移动一章
+        //重置当前进度的临时变量值
+        self.addAry = [NSMutableArray array];
+        self.textAry  = [NSMutableArray array];
+        self.hashDic = [NSMutableDictionary dictionary];
+        [self.tableView reloadData];
+        [self inAnimationWithText:self.titleAry[self.index] finish:nil];
         return;
     }
     ContentModel *model = self.textAry[self.addAry.count];
     [self addTextFromMe:model];
-    if (model.text.length>0) {
+    if (model.text) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(WAIT_TIME * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self autoAdd];
         });
@@ -183,7 +255,6 @@
         paraStyle01.firstLineHeadIndent = emptylen;//首行缩进
         paraStyle01.lineSpacing = 7.0f;//行间距
         NSAttributedString *attrText = [[NSAttributedString alloc] initWithString:model.text attributes:@{NSParagraphStyleAttributeName:paraStyle01,NSForegroundColorAttributeName:model.color}];
-        
         cell.textLabel.attributedText = attrText;
         return cell;
     }

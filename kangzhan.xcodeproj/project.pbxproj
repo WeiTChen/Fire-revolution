@@ -50,6 +50,7 @@
 		B88FD95820216829003DD478 /* ZCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FD93420216829003DD478 /* ZCUser.m */; };
 		B88FD95D202168F2003DD478 /* ProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FD95B202168F1003DD478 /* ProgressHUDManager.m */; };
 		B88FD95E202168F2003DD478 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FD95C202168F2003DD478 /* MBProgressHUD.m */; };
+		B896BD9B2232595400112328 /* 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B896BD9A2232595300112328 /* 1.txt */; };
 		B89DBABF202173B2000873A3 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B89DBABE202173B2000873A3 /* bg.jpg */; };
 		B8A5EE6520075CEA00298717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A5EE6420075CEA00298717 /* AppDelegate.m */; };
 		B8A5EE6820075CEA00298717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A5EE6720075CEA00298717 /* ViewController.m */; };
@@ -58,7 +59,7 @@
 		B8A5EE7020075CEA00298717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8A5EE6E20075CEA00298717 /* LaunchScreen.storyboard */; };
 		B8A5EE7320075CEA00298717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8A5EE7220075CEA00298717 /* main.m */; };
 		B8B2217C200D8EFE0000079E /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B2217B200D8EFE0000079E /* ContentModel.m */; };
-		B8B2217E200D998A0000079E /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8B2217D200D998A0000079E /* test.txt */; };
+		B8B2217E200D998A0000079E /* 0.txt in Resources */ = {isa = PBXBuildFile; fileRef = B8B2217D200D998A0000079E /* 0.txt */; };
 		B8B22181200DA1130000079E /* ButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B22180200DA1130000079E /* ButtonTableViewCell.m */; };
 		B8B2219D200DA1810000079E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B22184200DA1810000079E /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		B8B2219E200DA1810000079E /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B8B2218D200DA1810000079E /* ViewController+MASAdditions.m */; };
@@ -81,7 +82,6 @@
 		48758AC8E5F035E4912228AE /* Pods-TextGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextGame/Pods-TextGame.release.xcconfig"; sourceTree = "<group>"; };
 		4C29957E604080753D58743B /* Pods-TextGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextGame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextGame/Pods-TextGame.debug.xcconfig"; sourceTree = "<group>"; };
 		760075CDD64E154BC060FCFE /* Pods-kangzhan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kangzhan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kangzhan/Pods-kangzhan.debug.xcconfig"; sourceTree = "<group>"; };
-		B83A3FB821B4BB70001BC951 /* kangzhan.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kangzhan.entitlements; sourceTree = "<group>"; };
 		B845EFBA200DEBF60015BEB4 /* NSObject+TCJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TCJSON.m"; sourceTree = "<group>"; };
 		B845EFBB200DEBF60015BEB4 /* NSObject+TCJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TCJSON.h"; sourceTree = "<group>"; };
 		B88FD8C520216047003DD478 /* SMForgetPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMForgetPasswordViewController.h; sourceTree = "<group>"; };
@@ -167,6 +167,7 @@
 		B88FD95A202168F0003DD478 /* ProgressHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDManager.h; sourceTree = "<group>"; };
 		B88FD95B202168F1003DD478 /* ProgressHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDManager.m; sourceTree = "<group>"; };
 		B88FD95C202168F2003DD478 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B896BD9A2232595300112328 /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.txt; sourceTree = "<group>"; };
 		B89DBABE202173B2000873A3 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		B8A5EE6020075CEA00298717 /* kangzhan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kangzhan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8A5EE6320075CEA00298717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -180,7 +181,7 @@
 		B8A5EE7220075CEA00298717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B8B2217A200D8EFE0000079E /* ContentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
 		B8B2217B200D8EFE0000079E /* ContentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
-		B8B2217D200D998A0000079E /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		B8B2217D200D998A0000079E /* 0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 0.txt; sourceTree = "<group>"; };
 		B8B2217F200DA1130000079E /* ButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonTableViewCell.h; sourceTree = "<group>"; };
 		B8B22180200DA1130000079E /* ButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonTableViewCell.m; sourceTree = "<group>"; };
 		B8B22183200DA1810000079E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -345,7 +346,6 @@
 		B8A5EE5720075CEA00298717 = {
 			isa = PBXGroup;
 			children = (
-				B83A3FB821B4BB70001BC951 /* kangzhan.entitlements */,
 				B8A5EE6220075CEA00298717 /* TextGame */,
 				B8A5EE6120075CEA00298717 /* Products */,
 				2402E99C46D10D88D8F4C189 /* Pods */,
@@ -385,7 +385,8 @@
 				B845EFBA200DEBF60015BEB4 /* NSObject+TCJSON.m */,
 				3D818EF12021DFF000244801 /* InfoPlist.strings */,
 				B89DBABE202173B2000873A3 /* bg.jpg */,
-				B8B2217D200D998A0000079E /* test.txt */,
+				B8B2217D200D998A0000079E /* 0.txt */,
+				B896BD9A2232595300112328 /* 1.txt */,
 				B8A5EE6920075CEA00298717 /* Main.storyboard */,
 				B8A5EE6C20075CEA00298717 /* Assets.xcassets */,
 				B8A5EE6E20075CEA00298717 /* LaunchScreen.storyboard */,
@@ -473,10 +474,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -508,8 +509,9 @@
 			files = (
 				B8A5EE7020075CEA00298717 /* LaunchScreen.storyboard in Resources */,
 				3D818EEF2021DFF000244801 /* InfoPlist.strings in Resources */,
+				B896BD9B2232595400112328 /* 1.txt in Resources */,
 				B8A5EE6D20075CEA00298717 /* Assets.xcassets in Resources */,
-				B8B2217E200D998A0000079E /* test.txt in Resources */,
+				B8B2217E200D998A0000079E /* 0.txt in Resources */,
 				B89DBABF202173B2000873A3 /* bg.jpg in Resources */,
 				B8A5EE6B20075CEA00298717 /* Main.storyboard in Resources */,
 			);
@@ -776,10 +778,9 @@
 			baseConfigurationReference = 760075CDD64E154BC060FCFE /* Pods-kangzhan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kangzhan.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 37FYLT4YCV;
+				DEVELOPMENT_TEAM = VD2VUYUUCY;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = $SRCROOT/TextGame/Header.pch;
 				INFOPLIST_FILE = TextGame/Info.plist;
@@ -802,10 +803,9 @@
 			baseConfigurationReference = EC558F6CAB378EA487384C66 /* Pods-kangzhan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = kangzhan.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 37FYLT4YCV;
+				DEVELOPMENT_TEAM = VD2VUYUUCY;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = $SRCROOT/TextGame/Header.pch;
 				INFOPLIST_FILE = TextGame/Info.plist;
