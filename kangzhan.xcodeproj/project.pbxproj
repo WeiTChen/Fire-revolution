@@ -791,7 +791,7 @@
 					"$(PROJECT_DIR)/TextGame",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fire-revolution";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reload.wolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -817,7 +817,7 @@
 					"$(inherited)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Fire-revolution";
+				PRODUCT_BUNDLE_IDENTIFIER = com.reload.wolf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
